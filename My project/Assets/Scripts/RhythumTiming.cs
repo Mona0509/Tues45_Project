@@ -17,11 +17,11 @@ public class RhythumTiming : MonoBehaviour
         // Player位置とノーツの位置計算
         judge = Mathf.Abs(playerPos.position.y - notesPos.position.y);
 
-        if(judge <= 0)
+        if(judge <= 1)
         {
             perfect = true;
         }
-        else if(judge <= 1)
+        else if(judge <= 1.5)
         {
             nomal = true;
         }
